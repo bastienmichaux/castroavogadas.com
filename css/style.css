@@ -1,0 +1,246 @@
+/*
+	 CSS-Tricks Example
+	 by Chris Coyier
+	 http://css-tricks.com
+*/
+
+* { margin: 0; padding: 0; }
+html { overflow-y: scroll; }
+
+body {
+	font: 12px/1.4 Helvetica, sans-serif;
+	/*background-image:url(../images/wallpapertorepeat.jpg);
+		background-repeat:repeat-x repeat-y ;*/
+		margin-top:5px;
+	margin-bottom:10px;
+	background-color:#fff;
+	font-family: Helvetica, sans-serif;
+	border: 1px;
+		 }
+
+header {background-image: url(../images/headerimage.jpg) ;
+		background-repeat:no-repeat;
+		padding:0px;
+		
+		}
+
+.pageimage{
+	margin-top:10px;
+	margin-left:14px
+	}
+
+.group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+.group { display: inline-block; clear: both; }
+/* start commented backslash hack \*/ * html .group { height: 1%; } .group { display: block; } /* close commented backslash hack */
+article, aside, figure, footer, footercast, header, hgroup, menu, nav, section, side-menu, homesubarticle, que-hacemos-article { display: block; }
+a:focus { outline: 0; } 
+
+#page-wrap { 
+    width: 825px; 
+	background: #f0f0f0; 
+	margin:auto;
+}
+
+#main-content {
+				width:795px;
+				height:auto;
+				padding:10px 20px 10px 0px;
+				display:inline-block;
+				text-align:justify;	
+				}
+
+#main-content h2{
+	height:50px;
+	padding:5px 0px 0px 15px;
+	text-align: center;
+}
+
+#main-content span h3{
+	font-size:36px;
+	margin-top:15px;	
+	}
+	
+#areas {
+	
+	margin-bottom:20px
+	}
+#areas li{
+	text-align:left;
+	padding-left:25px;
+	list-style-type:none
+	}
+
+#areas h2{
+	text-align:center;
+	margin-top:5px;
+	margin-bottom:25px;
+	color:#666;
+	text-decoration:underline
+	}
+
+.article{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	text-align:left;
+	vertical-align:top
+	}
+	
+.article h4{
+	font-weight:bold;
+	font-size:small;}
+	
+.article h1{
+	font-size:x-large;
+	line-height: 98%;
+}
+
+.article p{
+	padding:5px
+}
+
+.side-menu {
+	width:200px;
+	height:300px;
+	margin: 25px 20px 5px 5px ;
+	float:right;
+	clear:both;
+	background-image:url(../images/backgroundimgpgmenu%20copie%20copie.jpg);
+	background-repeat:no-repeat;
+	padding-top:15px;
+	padding-left:auto;
+	padding-bottom:40px;
+	vertical-align:top
+	}
+
+.side-menu ul li {
+	padding: 10px;
+	text-decoration: none;
+	font: large "Lucida Grande", "Verdana", sans-serif;
+	color: #333;
+	list-style-type:none;
+		text-shadow: 1px 1px 1px #999;
+		text-align:center
+	}
+	
+.side-menu ul li a {
+		text-decoration: none; 
+		color: #333;
+		transition-property:color;
+		transition-duration:1s;
+		/*Safari*/
+		-webkit-transition-property:color;
+		-webkit-transition-duration:1s;
+	}
+	
+.side-menu ul li a:hover {
+	color: #FFF;
+}
+
+.homesubarticle {
+	width:250px;
+	padding:5px;
+	display: inline-block;
+	height: 250px;
+	}
+	
+.homesubarticle2 {
+	width:250px;
+	padding:5px;
+	display: inline-block;
+	height: auto;
+	border: 1px #64c4c7 solid;
+	float:right;
+	vertical-align:top;
+	margin-top:30px;
+	}
+	
+.homesubarticle3 {
+	width:748px;
+	padding:5px;
+	display:inline-block;
+	height: auto;
+	float:left;
+	background-color:#CCC;
+	margin:0px 1px 0px 30px;
+	border: 1px #64c4c7 solid;
+	font-size:medium
+	}	
+
+.homesubarticle3 p {margin:0px}
+
+.homesubarticle3 h3 {
+	text-decoration: underline;}
+
+.p-inicio{
+	font-size:medium;
+	}
+
+
+h1 {
+	font: bold 32px  "Lucida Grande", "Verdana", sans-serif;
+	letter-spacing: -1px;
+	padding: 14px;
+	color: #333;
+	text-shadow: 1px 1px 1px white;
+	text-align: left;
+}
+p {
+	margin: 0 0 15px 0;
+	color: #666;
+}
+ 
+nav ul { 
+    list-style: none; background: transparent ; padding: 5px 20px; width: 760px; position: center ; margin:auto; margin-top:15px; margin-bottom: 15px; margin-left: 33px
+}
+nav ul li { display: inline; }
+
+nav ul li a {
+	display: block;
+	float: left;
+	
+	padding: 0 10px;
+	font: bold 16px  Tahoma, Geneva, sans-serif;
+	color: #fff;
+	text-decoration: none; 
+	margin: 0 5px 0 0;
+	transition-property:color;
+	transition-duration:1s;
+	/*Safari*/
+	-webkit-transition-property:color;
+	-webkit-transition-duration:1s;
+}
+nav ul li a:hover {
+	color: #64c6c7;
+}
+	
+nav ul li a:active, nav ul li a.current {
+	border-top-color: #245779;
+	background: #1b435e;
+	position: relative;
+	top: 1px; 
+}
+
+
+
+
+footer { 	
+			float:left;
+			padding: 0 0 50px 0; 
+			width: 825px; 
+			height:130px; 
+			clear:both;
+			background-image:url(../images/footerimg.jpg);
+			background-repeat:repeat-x
+			}
+
+
+
+footercast { 	
+			float:left;
+			padding: 0 0 50px 0; 
+			width: 825px; 
+			height:130px; 
+			clear:both;
+			background-image:url(../images/footerimg-cast.jpg);
+			background-repeat:repeat-x
+			}
